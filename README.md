@@ -1,5 +1,5 @@
 <div align='center'>
-<h1>Adversarial Robustness and Functional Attacks in Neural Operators</h1>
+<h3>Adversarial Robustness and Functional Attacks in Neural Operators</h3>
 <h3>Deep Learning Project 2025</h3>
 
 <a>Artiom Casapu</a><sup>1</sup>,
@@ -13,8 +13,6 @@
 </div>
 
 ---
-
-This project evaluates the adversarial robustness of Fourier Neural Operator (FNO), Factorized Fourier Neural Operators (FFNO), and Convolutional Neural Operators (CNO) on 2D Darcy Flow and 2D Navier-Stokes equations.
 
 ## Quick Start
 
