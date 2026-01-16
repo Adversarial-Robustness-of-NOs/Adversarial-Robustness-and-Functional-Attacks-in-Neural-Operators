@@ -1,0 +1,43 @@
+================================================================================
+                        NEURAL OPERATOR ROBUSTNESS REPORT                       
+================================================================================
+Data Source:       temporal/ns_2d/data/attack/fno/attack_noise_spectral_l2_0.1.h5
+Transferability:   64x  -->  64x
+Number of Samples: 10
+
+[1] Initial Condition Perturbation (t=0, Source Res)
+------------------------------------------------------------------------------------------------
+  > Absolute L2 Norm: 1.606965
+  > Relative L2 Norm: 10.00% (of clean IC)
+  > Input Spectrum:   Low Freq (k<=6): 0.0000 (0.0%) | High Freq (k>6): 73.8499 (100.0%)
+
+[2] Global Performance (Space-Time Average)
+------------------------------------------------------------------------------------------------
+Metric                    Baseline (Clean)          Adversarial               Delta (Ratio)       
+------------------------------------------------------------------------------------------------
+Relative L2 Error         0.007214                    0.008064                    +8.50e-04 (1.12x)   
+Mean Squared Error        0.000014                    0.000017                    +3.23e-06 (1.24x)   
+
+[3] Temporal Evolution (Per-Step L2 Error vs Ground Truth)
+------------------------------------------------------------------------------------------------
+Time   | Clean Err %  Adv Err %    Ratio      | Clean Phys   Adv Phys    
+------------------------------------------------------------------------------------------------
+T=0    | 0.42%       4.10%       9.75x     | 1.03e-02       2.38e-02
+T=12   | 0.93%       0.95%       1.01x     | 1.01e-02       1.01e-02
+T=24   | 0.73%       0.74%       1.01x     | 1.01e-02       1.01e-02
+T=36   | 0.67%       0.67%       1.01x     | 1.00e-02       1.00e-02
+T=48   | 0.68%       0.68%       1.00x     | 1.00e-02       1.00e-02
+
+[4] Frequency Analysis (Spectral Vulnerability)
+------------------------------------------------------------------------------------------------
+Band                 Clean Error          Adv Error            Ratio (Adv/Clean)   
+------------------------------------------------------------------------------------------------
+Low Freq (k<=6)      10.6545               10.7454               1.01x
+High Freq (k>6)      0.9480               0.9488               1.00x
+
+[5] Spectral Transfer Analysis (Input Pert → Output Pert)
+------------------------------------------------------------------------------------------------
+  Input Perturbation:   7.2% Low-Freq / 92.8% High-Freq
+  Output Perturbation:  99.4% Low-Freq / 0.6% High-Freq
+  Spectral Shift:       Low-Freq +92.2% | High-Freq -92.2%
+================================================================================

@@ -1,0 +1,11 @@
+ROBUSTNESS & STABILITY REPORT
+========================================
+Avg Input Perturbation L2: 1.277878
+Amplification Ratio:       0.84x
+----------------------------------------
+Input Low-Freq Change:     +0.06%
+Input High-Freq Change:    +0.19%
+Output Low-Freq Diff:      -0.74%
+Output High-Freq Diff:     -78.08%
+
+Avg Rel L2 Error:          4.89%

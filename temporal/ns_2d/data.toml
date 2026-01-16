@@ -1,0 +1,11 @@
+[config]
+data_path = "temporal/ns_2d/data/data_10k_50steps_s64/ns_data.h5"
+n_samples = 10000
+
+# --- PHYSICS PARAMETERS ---
+# dt = Total Duration / Recorded Steps
+# dt = 10.0 / 50 = 0.2
+dt = 0.2          
+
+# Must match 'visc' in generation script
+viscosity = 1e-3

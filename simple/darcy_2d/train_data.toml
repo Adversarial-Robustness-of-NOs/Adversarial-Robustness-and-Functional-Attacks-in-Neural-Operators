@@ -1,0 +1,6 @@
+[config]
+data_path = "simple/darcy_2d/data/pdebench_darcy_clean_128.h5"
+n_samples = 1000
+# Must match 'visc' in generation script
+force_term = 1.0
+resolution = 128

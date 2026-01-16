@@ -1,0 +1,14 @@
+{
+    "metrics": {
+        "avg_output_rel_l2": 0.048938244581222534,
+        "avg_output_abs_l2": 1.0732405185699463,
+        "avg_input_pert_l2": 1.277877926826477,
+        "amplification_ratio": 0.8398217558860779
+    },
+    "spectral_changes": {
+        "out_low_diff": -0.00741578359156847,
+        "out_high_diff": -0.7808484435081482,
+        "in_low_chg": 0.0006452032830566168,
+        "in_high_chg": 0.001879301038570702
+    }
+}

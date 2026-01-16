@@ -1,0 +1,10 @@
+
+==================================================
+COMPREHENSIVE RESULTS
+==================================================
+Global Rel Error:     0.99309 ± 0.01679
+Efficacy:             -0.01622 ± 0.04412
+Boundary Max Error:   0.00107 ± 0.00020
+Boundary RMSE:        0.00028 ± 0.00000
+
+Plots saved to: temporal/ns_2d/data/fno_attack_all/spectral_pi//

@@ -1,0 +1,6 @@
+ROBUSTNESS & STABILITY REPORT
+========================================
+Output Low-Freq Diff:      -1.04%
+Output High-Freq Diff:     -21.13%
+
+Avg Rel L2 Error:          6.04%

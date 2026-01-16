@@ -1,0 +1,7 @@
+RMSE: 0.008660
+Rel_L2: 0.051432
+Physics_Error: 9.037731e+00
+Physics_Loss_Clean: 1.045958e+01
+Physics_Loss_Adv: 8.836909e+00
+Perturbation_L2: 1.099909
+Perturbation_Linf: 0.010000

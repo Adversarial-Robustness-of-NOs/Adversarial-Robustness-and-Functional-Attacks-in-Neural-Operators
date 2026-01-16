@@ -1,0 +1,10 @@
+{
+    "metrics": {
+        "avg_output_rel_l2": 0.06035256013274193,
+        "avg_output_abs_l2": 2.6608216762542725
+    },
+    "spectral_changes": {
+        "out_low_diff": -0.0103630181401968,
+        "out_high_diff": -0.2112850844860077
+    }
+}

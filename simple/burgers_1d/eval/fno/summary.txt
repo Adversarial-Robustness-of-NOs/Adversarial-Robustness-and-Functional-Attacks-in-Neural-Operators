@@ -1,0 +1,6 @@
+Evaluation Complete.
+---------------------
+Mean Relative L2: 1.0479
+Min Relative L2:  0.0304
+Max Relative L2:  37.9598
+Plots saved to:   simple/burgers_1d/eval/fno/

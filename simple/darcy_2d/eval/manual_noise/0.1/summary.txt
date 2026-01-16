@@ -1,0 +1,27 @@
+ROBUSTNESS & STABILITY REPORT
+==================================================
+Avg Output Rel L2 Error:   5.59%
+Avg Output Abs L2 Error:   1.230996
+Avg PDE Residual Loss:     9.879843
+Avg BC Loss:               0.005586
+--------------------------------------------------
+INPUT PERTURBATION ANALYSIS
+--------------------------------------------------
+Avg Perturbation Abs L2:   0.100000
+Avg Perturbation Rel L2:   0.11%
+Amplification Ratio (Abs): 12.31x
+Amplification Ratio (Rel): 52.08x
+--------------------------------------------------
+PERTURBATION CHARACTERISTICS
+  Max Abs Value:           0.057735
+  Avg L-inf Norm:          0.040187
+  Sparsity:                99.94%
+  Smoothness:              7413.21
+  Low-Freq Energy Ratio:   53.69%
+  High-Freq Energy Ratio:  46.31%
+--------------------------------------------------
+SPECTRAL CHANGES
+  Input Low-Freq Change:   +0.01%
+  Input High-Freq Change:  +0.00%
+Output Low-Freq Diff:      -1.63%
+Output High-Freq Diff:     -79.33%

@@ -1,0 +1,8 @@
+[config]
+data_path = "simple/darcy_2d/data/pdebench_darcy_128_force_term_1.0.h5"
+low_res_data_path = "simple/darcy_2d/data/pdebench_darcy_64_force_term_1.0.h5"
+high_res_data_path = "simple/darcy_2d/data/pdebench_darcy_256_force_term_1.0.h5"
+n_samples = 100
+# Must match 'visc' in generation script
+force_term = 1.0
+resolution = 128

@@ -1,0 +1,80 @@
+# ==========================================
+# 1. GENERAL SETTINGS
+# ==========================================
+[general]
+resolution = 128            # Resolution of the Darcy simulation (e.g., 128x128)
+n_samples = 10              # How many adversarial examples to generate
+output_dir = "simple/darcy_2d/data/attack/ffno/clean" # Folder to save H5 and PNG files
+
+# ==========================================
+# 2. MODEL PATHS
+# ==========================================
+[model]
+# Path to the config file used to TRAIN the model (needed to reconstruct architecture)
+model_config_path = "simple/darcy_2d/ffno_model.toml" 
+# Path to the saved weights (.pt or .pth)
+model_path = "simple/darcy_2d/trained_models/best_ffno_model.pth"
+data_config_path = "simple/darcy_2d/attack_data.toml"     # For the input clean conditions
+
+# ==========================================
+# 3. PGD ATTACK PARAMETERS
+# ==========================================
+[pgd]
+epsilon = [0.1, 0.05, 0.01, 0.005, 0.001]              # Max perturbation magnitude (L-inf norm)
+steps = 200                  # Number of optimization steps
+alpha = 0.005               # Step size (learning rate) per iteration
+smooth_grad = false         # Set true to smooth gradients (removes high-freq noise artifacts)
+kernel_size = 5             # Only used if smooth_grad = true
+sigma = 1.0                 # Only used if smooth_grad = true
+batch_size = 64
+target_l2 = [0.1, 0.075, 0.05, 0.025, 0.01]
+
+# ==========================================
+# 4. PHYSICS SETTINGS
+# ==========================================
+[physics]
+# --- LOSS WEIGHTS ---
+# To create "Physics-Compliant" (Stealth) attacks:
+# Increase these values. The attack will maximize Error while Minimizing Physics residuals.
+lambda_pde = [0.1, 10.0, 100.0]            # Weight for the PDE residual loss
+lambda_bc =  [0.1, 10.0, 100.0]             # Weight for the Boundary Condition loss
+
+# ==========================================
+# 5. ACTIVE ATTACKS (Toggles)
+# ==========================================
+[active_attacks]
+# A. Standard Attacks (Maximize MSE only)
+spatial_pure = true         # Standard PGD on pixel space
+spectral_pure = true        # PGD on Fourier modes
+amplitude_pure = false      # Perturb amplitudes only
+phase_pure = false          # Perturb phases only
+
+# B. Stealth Attacks (Maximize MSE - Physics_Violation)
+# Uses lambda_pde defined above
+spectral_stealth = true
+spatial_stealth = true      
+
+# C. Consistency Attack (Self-Supervised)
+# Requires 'consistency_low_res' arg in script
+consistency = true          
+
+# D. Targeted Frequency (Optional)
+spectral_targeted = true   
+
+# E. MVMO
+mvmo = true
+
+# F. Boundary
+boundary = true
+
+# H. Noise
+spectral_noise = true
+spatial_noise = true
+
+
+# ==========================================
+# 6. FREQUENCY TARGETING (Optional)
+# ==========================================
+[frequency]
+target_min = 10.0           # Minimum wavenumber to attack
+target_max = 25.0           # Maximum wavenumber to attack

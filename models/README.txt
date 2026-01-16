@@ -1,0 +1,1 @@
+Mostly taken from (https://github.com/camlab-ethz/ConvolutionalNeuralOperator)

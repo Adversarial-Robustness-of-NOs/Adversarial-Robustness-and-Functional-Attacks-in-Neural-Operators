@@ -1,0 +1,12 @@
+title = "1D Burgers spatial data u(x, t=0) -> u(x, t=2)"
+
+[config]
+num_dimensions = 1
+x_domain_size = 1.0
+t_domain_size = 2.0
+nu = 0.01
+nu_divide_by_pi = true
+x_spatial_resolution = 1024
+data_path = "simple/burgers_1d/data/simple_k32/clean.h5"
+n_samples = 1000
+train_test_split = 0.9

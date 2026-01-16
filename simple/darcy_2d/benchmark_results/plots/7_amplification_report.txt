@@ -1,0 +1,232 @@
+==============================================================================================================
+AMPLIFICATION RANKING REPORT
+==============================================================================================================
+
+==============================================================================================================
+MODEL: CNO
+==============================================================================================================
+
+Rank   Experiment                                         Input Pert %   Output Err %   Amplification 
+------ -------------------------------------------------- -------------- -------------- --------------
+1      Boundary | ε=0.001                                 0.02           2.45           100.75        x
+2      Boundary | ε=0.005                                 0.12           2.46           20.37         x
+3      PGD-Pure | Spat | ε=0.001                          0.14           2.63           19.06         x
+4      PGD-Stealth | Spat | ε=0.001 | λ=10                0.14           2.43           17.59         x
+5      PGD-Stealth | Spat | ε=0.001 | λ=100               0.14           2.43           17.59         x
+6      PGD-Stealth | Spat | ε=0.001 | λ=0                 0.14           2.43           17.59         x
+7      MVMO | ε=0.001                                     0.14           2.43           17.59         x
+8      Boundary | ε=0.010                                 0.24           2.49           10.28         x
+9      PGD-Pure | Spat | ε=0.005                          0.69           3.56           5.17          x
+10     PGD-Pure | Spat | ε=0.100                          13.56          51.41          3.83          x
+11     PGD-Stealth | Spat | ε=0.005 | λ=100               0.64           2.43           3.80          x
+12     PGD-Stealth | Spat | ε=0.005 | λ=0                 0.64           2.43           3.79          x
+13     MVMO | ε=0.005                                     0.64           2.43           3.79          x
+14     PGD-Stealth | Spat | ε=0.005 | λ=10                0.64           2.42           3.79          x
+15     PGD-Pure | Spat | ε=0.010                          1.38           4.94           3.60          x
+16     PGD-Pure | Spec | ε=0.005                          1.05           3.04           2.94          x
+17     PGD-Pure | Spec | ε=0.001                          1.05           3.04           2.94          x
+18     PGD-Pure | Spec | ε=0.050                          1.05           3.04           2.94          x
+19     PGD-Pure | Spec | ε=0.010                          1.05           3.04           2.94          x
+20     PGD-Pure | Spec | ε=0.100                          1.05           3.04           2.94          x
+21     PGD-Pure | Spat | ε=0.050                          6.82           19.35          2.85          x
+22     Noise | Spec | L2=1.0%                             1.00           2.44           2.44          x
+23     Noise | Spat | L2=1.0%                             1.00           2.44           2.44          x
+24     PGD-Stealth | Spec | ε=0.100 | λ=10                1.05           2.39           2.29          x
+25     PGD-Stealth | Spec | ε=0.010 | λ=10                1.05           2.39           2.29          x
+26     PGD-Stealth | Spec | ε=0.001 | λ=10                1.05           2.39           2.29          x
+27     PGD-Stealth | Spec | ε=0.005 | λ=100               1.05           2.39           2.29          x
+28     PGD-Stealth | Spec | ε=0.005 | λ=0                 1.05           2.39           2.29          x
+29     PGD-Stealth | Spec | ε=0.050 | λ=10                1.05           2.39           2.29          x
+30     PGD-Stealth | Spec | ε=0.001 | λ=0                 1.05           2.39           2.29          x
+31     PGD-Stealth | Spec | ε=0.100 | λ=100               1.05           2.39           2.29          x
+32     PGD-Stealth | Spec | ε=0.100 | λ=0                 1.05           2.39           2.29          x
+33     PGD-Stealth | Spec | ε=0.050 | λ=100               1.05           2.39           2.29          x
+34     PGD-Stealth | Spec | ε=0.010 | λ=0                 1.05           2.39           2.29          x
+35     PGD-Stealth | Spec | ε=0.001 | λ=100               1.05           2.39           2.29          x
+36     PGD-Stealth | Spec | ε=0.005 | λ=10                1.05           2.39           2.29          x
+37     PGD-Stealth | Spec | ε=0.050 | λ=0                 1.05           2.39           2.29          x
+38     PGD-Stealth | Spec | ε=0.010 | λ=100               1.05           2.39           2.29          x
+39     Boundary | ε=0.050                                 1.20           2.70           2.27          x
+40     PGD-Stealth | Spat | ε=0.010 | λ=100               1.26           2.52           1.99          x
+41     PGD-Stealth | Spat | ε=0.010 | λ=0                 1.26           2.52           1.98          x
+42     PGD-Stealth | Spat | ε=0.010 | λ=10                1.26           2.52           1.98          x
+43     MVMO | ε=0.010                                     1.26           2.51           1.97          x
+44     Boundary | ε=0.100                                 2.34           3.01           1.31          x
+45     Noise | Spat | L2=2.5%                             2.50           2.51           1.00          x
+46     MVMO | ε=0.050                                     4.75           4.80           1.00          x
+47     PGD-Stealth | Spat | ε=0.050 | λ=10                4.71           4.75           0.99          x
+48     PGD-Stealth | Spat | ε=0.050 | λ=100               4.72           4.75           0.99          x
+49     Noise | Spec | L2=2.5%                             2.50           2.48           0.99          x
+50     PGD-Stealth | Spat | ε=0.050 | λ=0                 4.71           4.71           0.98          x
+51     MVMO | ε=0.100                                     6.66           5.38           0.80          x
+52     PGD-Stealth | Spat | ε=0.100 | λ=0                 6.66           5.33           0.79          x
+53     PGD-Stealth | Spat | ε=0.100 | λ=100               6.65           5.31           0.79          x
+54     PGD-Stealth | Spat | ε=0.100 | λ=10                6.64           5.27           0.79          x
+55     Noise | Spat | L2=5.0%                             5.00           2.49           0.50          x
+56     Noise | Spec | L2=5.0%                             4.99           2.46           0.49          x
+57     Noise | Spat | L2=7.5%                             7.50           2.59           0.34          x
+58     Noise | Spec | L2=7.5%                             7.35           2.53           0.34          x
+59     Noise | Spat | L2=10.0%                            10.00          2.83           0.28          x
+60     Noise | Spec | L2=10.0%                            9.59           2.70           0.28          x
+
+Summary for CNO:
+  Total experiments: 60
+  Avg Input Perturbation: 2.54%
+  Avg Output Error: 4.02%
+  Avg Amplification: 5.47x
+  Max Amplification: 100.75x (Boundary | ε=0.001)
+  Min Amplification: 0.28x (Noise | Spec | L2=10.0%)
+
+==============================================================================================================
+MODEL: FFNO
+==============================================================================================================
+
+Rank   Experiment                                         Input Pert %   Output Err %   Amplification 
+------ -------------------------------------------------- -------------- -------------- --------------
+1      Boundary | ε=0.001                                 0.02           3.89           161.08        x
+2      Boundary | ε=0.005                                 0.12           3.93           32.54         x
+3      PGD-Pure | Spat | ε=0.001                          0.14           3.97           28.96         x
+4      PGD-Stealth | Spat | ε=0.001 | λ=0                 0.14           3.87           28.25         x
+5      PGD-Stealth | Spat | ε=0.001 | λ=100               0.14           3.87           28.25         x
+6      MVMO | ε=0.001                                     0.14           3.87           28.25         x
+7      PGD-Stealth | Spat | ε=0.001 | λ=10                0.14           3.87           28.25         x
+8      Boundary | ε=0.010                                 0.24           3.98           16.48         x
+9      PGD-Stealth | Spat | ε=0.005 | λ=0                 0.60           3.85           6.55          x
+10     MVMO | ε=0.005                                     0.60           3.85           6.55          x
+11     PGD-Stealth | Spat | ε=0.005 | λ=10                0.60           3.85           6.55          x
+12     PGD-Stealth | Spat | ε=0.005 | λ=100               0.60           3.85           6.55          x
+13     PGD-Pure | Spat | ε=0.005                          0.70           4.38           6.40          x
+14     PGD-Pure | Spec | ε=0.050                          1.01           4.07           4.08          x
+15     PGD-Pure | Spec | ε=0.100                          1.01           4.07           4.08          x
+16     PGD-Pure | Spec | ε=0.010                          1.01           4.07           4.08          x
+17     PGD-Pure | Spec | ε=0.005                          1.01           4.07           4.08          x
+18     PGD-Pure | Spec | ε=0.001                          1.01           4.07           4.08          x
+19     Noise | Spec | L2=1.0%                             1.00           3.88           3.88          x
+20     Noise | Spat | L2=1.0%                             1.00           3.86           3.86          x
+21     PGD-Stealth | Spec | ε=0.050 | λ=0                 1.02           3.86           3.84          x
+22     PGD-Stealth | Spec | ε=0.005 | λ=10                1.02           3.86           3.84          x
+23     PGD-Stealth | Spec | ε=0.005 | λ=0                 1.02           3.86           3.84          x
+24     PGD-Stealth | Spec | ε=0.100 | λ=10                1.02           3.86           3.84          x
+25     PGD-Stealth | Spec | ε=0.001 | λ=100               1.02           3.86           3.84          x
+26     PGD-Stealth | Spec | ε=0.100 | λ=0                 1.02           3.86           3.84          x
+27     PGD-Stealth | Spec | ε=0.001 | λ=0                 1.02           3.86           3.84          x
+28     PGD-Stealth | Spec | ε=0.001 | λ=10                1.02           3.86           3.84          x
+29     PGD-Stealth | Spec | ε=0.050 | λ=100               1.02           3.86           3.84          x
+30     PGD-Stealth | Spec | ε=0.010 | λ=100               1.02           3.86           3.84          x
+31     PGD-Stealth | Spec | ε=0.010 | λ=10                1.02           3.86           3.84          x
+32     PGD-Stealth | Spec | ε=0.100 | λ=100               1.02           3.86           3.84          x
+33     PGD-Stealth | Spec | ε=0.010 | λ=0                 1.02           3.86           3.84          x
+34     PGD-Stealth | Spec | ε=0.050 | λ=10                1.02           3.86           3.84          x
+35     PGD-Stealth | Spec | ε=0.005 | λ=100               1.02           3.86           3.84          x
+36     Boundary | ε=0.050                                 1.23           4.45           3.69          x
+37     PGD-Pure | Spat | ε=0.010                          1.39           4.99           3.65          x
+38     PGD-Stealth | Spat | ε=0.010 | λ=100               1.18           3.84           3.29          x
+39     MVMO | ε=0.010                                     1.18           3.84           3.28          x
+40     PGD-Stealth | Spat | ε=0.010 | λ=10                1.18           3.84           3.28          x
+41     PGD-Stealth | Spat | ε=0.010 | λ=0                 1.18           3.84           3.28          x
+42     Boundary | ε=0.100                                 2.45           5.21           2.16          x
+43     PGD-Pure | Spat | ε=0.050                          6.92           11.57          1.69          x
+44     Noise | Spec | L2=2.5%                             2.50           3.88           1.55          x
+45     PGD-Pure | Spat | ε=0.100                          13.77          21.09          1.55          x
+46     Noise | Spat | L2=2.5%                             2.50           3.87           1.55          x
+47     PGD-Stealth | Spat | ε=0.050 | λ=0                 4.24           3.87           0.92          x
+48     PGD-Stealth | Spat | ε=0.050 | λ=10                4.25           3.87           0.92          x
+49     PGD-Stealth | Spat | ε=0.050 | λ=100               4.25           3.88           0.92          x
+50     MVMO | ε=0.050                                     4.26           3.87           0.92          x
+51     Noise | Spat | L2=5.0%                             5.00           3.90           0.78          x
+52     Noise | Spec | L2=5.0%                             4.99           3.88           0.78          x
+53     PGD-Stealth | Spat | ε=0.100 | λ=0                 6.51           3.83           0.60          x
+54     PGD-Stealth | Spat | ε=0.100 | λ=100               6.51           3.82           0.59          x
+55     PGD-Stealth | Spat | ε=0.100 | λ=10                6.54           3.83           0.59          x
+56     MVMO | ε=0.100                                     6.53           3.82           0.59          x
+57     Noise | Spec | L2=7.5%                             7.36           3.85           0.52          x
+58     Noise | Spat | L2=7.5%                             7.50           3.91           0.52          x
+59     Noise | Spat | L2=10.0%                            10.00          4.12           0.41          x
+60     Noise | Spec | L2=10.0%                            9.58           3.86           0.40          x
+
+Summary for FFNO:
+  Total experiments: 60
+  Avg Input Perturbation: 2.49%
+  Avg Output Error: 4.36%
+  Avg Amplification: 8.48x
+  Max Amplification: 161.08x (Boundary | ε=0.001)
+  Min Amplification: 0.40x (Noise | Spec | L2=10.0%)
+
+==============================================================================================================
+MODEL: FNO
+==============================================================================================================
+
+Rank   Experiment                                         Input Pert %   Output Err %   Amplification 
+------ -------------------------------------------------- -------------- -------------- --------------
+1      Boundary | ε=0.001                                 0.02           5.60           231.50        x
+2      Boundary | ε=0.005                                 0.12           5.64           46.70         x
+3      PGD-Pure | Spat | ε=0.001                          0.14           5.74           41.75         x
+4      PGD-Stealth | Spat | ε=0.001 | λ=0                 0.14           5.58           40.63         x
+5      PGD-Stealth | Spat | ε=0.001 | λ=10                0.14           5.58           40.63         x
+6      MVMO | ε=0.001                                     0.14           5.58           40.63         x
+7      PGD-Stealth | Spat | ε=0.001 | λ=100               0.14           5.58           40.63         x
+8      Boundary | ε=0.010                                 0.24           5.69           23.55         x
+9      PGD-Pure | Spat | ε=0.005                          0.69           6.34           9.25          x
+10     PGD-Stealth | Spat | ε=0.005 | λ=10                0.63           5.55           8.77          x
+11     PGD-Stealth | Spat | ε=0.005 | λ=0                 0.63           5.55           8.77          x
+12     PGD-Stealth | Spat | ε=0.005 | λ=100               0.63           5.55           8.77          x
+13     MVMO | ε=0.005                                     0.63           5.55           8.77          x
+14     PGD-Pure | Spec | ε=0.050                          1.02           5.95           5.90          x
+15     PGD-Pure | Spec | ε=0.100                          1.02           5.95           5.90          x
+16     PGD-Pure | Spec | ε=0.010                          1.02           5.95           5.90          x
+17     PGD-Pure | Spec | ε=0.005                          1.02           5.95           5.90          x
+18     PGD-Pure | Spec | ε=0.001                          1.02           5.95           5.90          x
+19     Noise | Spat | L2=1.0%                             1.00           5.59           5.59          x
+20     Noise | Spec | L2=1.0%                             1.00           5.59           5.59          x
+21     PGD-Stealth | Spec | ε=0.005 | λ=0                 1.03           5.57           5.48          x
+22     PGD-Stealth | Spec | ε=0.100 | λ=0                 1.03           5.57           5.48          x
+23     PGD-Stealth | Spec | ε=0.050 | λ=0                 1.03           5.57           5.48          x
+24     PGD-Stealth | Spec | ε=0.010 | λ=0                 1.03           5.57           5.48          x
+25     PGD-Stealth | Spec | ε=0.001 | λ=0                 1.03           5.57           5.48          x
+26     PGD-Stealth | Spec | ε=0.005 | λ=100               1.03           5.57           5.48          x
+27     PGD-Stealth | Spec | ε=0.001 | λ=10                1.03           5.57           5.48          x
+28     PGD-Stealth | Spec | ε=0.010 | λ=10                1.03           5.57           5.48          x
+29     PGD-Stealth | Spec | ε=0.050 | λ=100               1.03           5.57           5.48          x
+30     PGD-Stealth | Spec | ε=0.100 | λ=100               1.03           5.57           5.48          x
+31     PGD-Stealth | Spec | ε=0.010 | λ=100               1.03           5.57           5.48          x
+32     PGD-Stealth | Spec | ε=0.100 | λ=10                1.03           5.57           5.48          x
+33     PGD-Stealth | Spec | ε=0.001 | λ=100               1.03           5.57           5.48          x
+34     PGD-Stealth | Spec | ε=0.050 | λ=10                1.03           5.57           5.48          x
+35     PGD-Stealth | Spec | ε=0.005 | λ=10                1.03           5.57           5.48          x
+36     PGD-Pure | Spat | ε=0.010                          1.39           7.15           5.21          x
+37     Boundary | ε=0.050                                 1.22           6.10           5.08          x
+38     MVMO | ε=0.010                                     1.26           5.51           4.36          x
+39     PGD-Stealth | Spat | ε=0.010 | λ=0                 1.26           5.51           4.36          x
+40     PGD-Stealth | Spat | ε=0.010 | λ=100               1.26           5.51           4.36          x
+41     PGD-Stealth | Spat | ε=0.010 | λ=10                1.26           5.51           4.36          x
+42     Boundary | ε=0.100                                 2.42           6.67           2.79          x
+43     Noise | Spec | L2=2.5%                             2.50           5.59           2.24          x
+44     Noise | Spat | L2=2.5%                             2.50           5.58           2.23          x
+45     PGD-Pure | Spat | ε=0.050                          6.90           14.29          2.09          x
+46     PGD-Pure | Spat | ε=0.100                          13.66          23.99          1.77          x
+47     Noise | Spat | L2=5.0%                             5.00           5.62           1.12          x
+48     Noise | Spec | L2=5.0%                             4.99           5.59           1.12          x
+49     PGD-Stealth | Spat | ε=0.050 | λ=100               5.31           5.40           1.01          x
+50     MVMO | ε=0.050                                     5.31           5.40           1.01          x
+51     PGD-Stealth | Spat | ε=0.050 | λ=0                 5.31           5.39           1.00          x
+52     PGD-Stealth | Spat | ε=0.050 | λ=10                5.31           5.38           1.00          x
+53     Noise | Spec | L2=7.5%                             7.36           5.65           0.77          x
+54     Noise | Spat | L2=7.5%                             7.50           5.63           0.75          x
+55     PGD-Stealth | Spat | ε=0.100 | λ=100               8.83           5.58           0.62          x
+56     PGD-Stealth | Spat | ε=0.100 | λ=10                8.84           5.56           0.62          x
+57     MVMO | ε=0.100                                     8.83           5.56           0.62          x
+58     PGD-Stealth | Spat | ε=0.100 | λ=0                 8.84           5.54           0.62          x
+59     Noise | Spec | L2=10.0%                            9.58           5.70           0.59          x
+60     Noise | Spat | L2=10.0%                            10.00          5.77           0.58          x
+
+Summary for FNO:
+  Total experiments: 60
+  Avg Input Perturbation: 2.72%
+  Avg Output Error: 6.12%
+  Avg Amplification: 12.06x
+  Max Amplification: 231.50x (Boundary | ε=0.001)
+  Min Amplification: 0.58x (Noise | Spat | L2=10.0%)
+
+==============================================================================================================
+END OF REPORT
+==============================================================================================================

@@ -1,0 +1,67 @@
+# ==========================================
+# 1. GENERAL SETTINGS
+# ==========================================
+[general]
+resolution = 64            # Resolution of the Navier Stokes simulation (e.g., 128x128)
+n_samples = 10              # How many adversarial examples to generate
+output_dir = "temporal/ns_2d/data/attack/fno" # Folder to save H5 and PNG files
+
+# ==========================================
+# 2. MODEL PATHS
+# ==========================================
+[model]
+# Path to the config file used to TRAIN the model (needed to reconstruct architecture)
+model_config_path = "temporal/ns_2d/fno_model.toml" 
+# Path to the saved weights (.pt or .pth)
+model_path = "temporal/ns_2d/trained_models/best_fno_model.pth"
+data_config_path = "temporal/ns_2d/attack_data.toml"     # For the input clean conditions
+
+# ==========================================
+# 3. PGD ATTACK PARAMETERS
+# ==========================================
+[pgd]
+epsilon_spatial = [0.1, 0.05, 0.01, 0.005, 0.001]              # Max perturbation magnitude (L-inf norm)
+epsilon_spectral = [0.1, 0.05, 0.01, 0.005, 0.001]             # Max perturbation magnitude (L2 norm)
+target_l2 = [0.1, 0.075, 0.05, 0.025, 0.01]                    # For noise
+
+steps = 50                  # Number of optimization steps
+alpha = 0.005               # Step size (learning rate) per iteration
+batch_size = 32
+
+# ==========================================
+# 4. PHYSICS SETTINGS
+# ==========================================
+[physics]
+# --- LOSS WEIGHTS ---
+# To create "Physics-Compliant" (Stealth) attacks:
+# Increase these values. The attack will maximize Error while Minimizing Physics residuals.
+lambda_pde = 10.0            # Weight for the PDE residual loss
+lambda_bc = 10.0            # Weight for the Boundary Condition loss
+
+# ==========================================
+# 5. ACTIVE ATTACKS (Toggles)
+# ==========================================
+[active_attacks]
+# A. Standard Attacks (Maximize MSE only)
+spatial_pure = true         # Standard PGD on pixel space
+spectral_pure = true        # PGD on Fourier modes
+
+# B. Stealth Attacks (Maximize MSE - Physics_Violation)
+# Uses lambda_pde defined above
+spatial_stealth = true      
+spectral_stealth = true
+
+# H. Noise
+spectral_noise = true
+spatial_noise = true
+
+sequential_spatial = true
+sequential_spectral = true
+
+# ==========================================
+# 6. FREQUENCY TARGETING (Optional)
+# ==========================================
+[frequency]
+spectral_targeted = true
+target_min = 6.0           # Minimum wavenumber to attack
+target_max = 12.0           # Maximum wavenumber to attack

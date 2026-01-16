@@ -1,0 +1,63 @@
+====================================================================================================
+CROSS-RESOLUTION ANALYSIS REPORT
+====================================================================================================
+
+This report shows how PGD pure perturbations transfer across resolutions.
+Lower error at different resolutions suggests the perturbation is
+resolution-dependent and may not transfer well.
+
+
+====================================================================================================
+MODEL: CNO
+====================================================================================================
+
+Attack                                   Rel_Eps      Low Res %    Std Res %    High Res %  
+---------------------------------------- ------------ ------------ ------------ ------------
+attack_pgd_spatial_eps0.01_pde0.0_bc0.0  0.010        11.20%       4.94%        7.34%       
+attack_pgd_spectral_eps0.001_pde0.0_bc.. 0.001        9.74%        3.04%        6.25%       
+attack_pgd_spectral_eps0.005_pde0.0_bc.. 0.005        9.74%        3.04%        6.25%       
+attack_pgd_spectral_eps0.1_pde0.0_bc0.0  0.100        9.74%        3.04%        6.25%       
+attack_pgd_spectral_eps0.01_pde0.0_bc0.0 0.010        9.74%        3.04%        6.25%       
+attack_pgd_spatial_eps0.001_pde0.0_bc0.0 0.001        9.68%        2.63%        6.10%       
+attack_pgd_spatial_eps0.1_pde0.0_bc0.0   0.100        46.31%       51.41%       51.38%      
+attack_pgd_spatial_eps0.05_pde0.0_bc0.0  0.050        22.71%       19.35%       20.13%      
+attack_pgd_spatial_eps0.005_pde0.0_bc0.0 0.005        10.26%       3.56%        6.54%       
+attack_pgd_spectral_eps0.05_pde0.0_bc0.0 0.050        9.74%        3.04%        6.25%       
+
+====================================================================================================
+MODEL: FFNO
+====================================================================================================
+
+Attack                                   Rel_Eps      Low Res %    Std Res %    High Res %  
+---------------------------------------- ------------ ------------ ------------ ------------
+attack_pgd_spatial_eps0.01_pde0.0_bc0.0  0.010        8.59%        4.99%        8.58%       
+attack_pgd_spectral_eps0.001_pde0.0_bc.. 0.001        8.78%        4.07%        7.71%       
+attack_pgd_spectral_eps0.005_pde0.0_bc.. 0.005        8.78%        4.07%        7.71%       
+attack_pgd_spectral_eps0.1_pde0.0_bc0.0  0.100        8.78%        4.07%        7.71%       
+attack_pgd_spectral_eps0.01_pde0.0_bc0.0 0.010        8.78%        4.07%        7.71%       
+attack_pgd_spatial_eps0.001_pde0.0_bc0.0 0.001        8.77%        3.97%        7.67%       
+attack_pgd_spatial_eps0.1_pde0.0_bc0.0   0.100        16.74%       21.09%       24.28%      
+attack_pgd_spatial_eps0.05_pde0.0_bc0.0  0.050        10.20%       11.57%       14.47%      
+attack_pgd_spatial_eps0.005_pde0.0_bc0.0 0.005        8.67%        4.38%        8.06%       
+attack_pgd_spectral_eps0.05_pde0.0_bc0.0 0.050        8.78%        4.07%        7.71%       
+
+====================================================================================================
+MODEL: FNO
+====================================================================================================
+
+Attack                                   Rel_Eps      Low Res %    Std Res %    High Res %  
+---------------------------------------- ------------ ------------ ------------ ------------
+attack_pgd_spatial_eps0.01_pde0.0_bc0.0  0.010        9.51%        7.15%        10.16%      
+attack_pgd_spectral_eps0.001_pde0.0_bc.. 0.001        9.41%        5.95%        9.04%       
+attack_pgd_spectral_eps0.005_pde0.0_bc.. 0.005        9.41%        5.95%        9.04%       
+attack_pgd_spectral_eps0.1_pde0.0_bc0.0  0.100        9.41%        5.95%        9.04%       
+attack_pgd_spectral_eps0.01_pde0.0_bc0.0 0.010        9.41%        5.95%        9.04%       
+attack_pgd_spatial_eps0.001_pde0.0_bc0.0 0.001        9.38%        5.74%        8.92%       
+attack_pgd_spatial_eps0.1_pde0.0_bc0.0   0.100        20.16%       23.99%       26.85%      
+attack_pgd_spatial_eps0.05_pde0.0_bc0.0  0.050        12.66%       14.29%       16.98%      
+attack_pgd_spatial_eps0.005_pde0.0_bc0.0 0.005        9.41%        6.34%        9.45%       
+attack_pgd_spectral_eps0.05_pde0.0_bc0.0 0.050        9.41%        5.95%        9.04%       
+
+====================================================================================================
+END OF REPORT
+====================================================================================================

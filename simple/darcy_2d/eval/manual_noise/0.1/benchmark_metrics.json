@@ -1,0 +1,30 @@
+{
+    "metrics": {
+        "avg_output_rel_l2": 0.055903904139995575,
+        "avg_output_abs_l2": 1.2309963703155518,
+        "avg_pde_loss": 9.879842758178711,
+        "avg_bc_loss": 0.005585704930126667,
+        "avg_physics_loss": 9.885428428649902,
+        "avg_abs_input_pert_l2": 0.09999998658895493,
+        "avg_rel_input_pert_l2": 0.0010873855790123343,
+        "amplification_abs_ratio": 12.309961318969727,
+        "amplification_rel_ratio": 52.083892822265625
+    },
+    "spectral_changes": {
+        "out_low_diff": -0.016329418867826462,
+        "out_high_diff": -0.7932832837104797,
+        "in_low_chg": 5.607400453300215e-05,
+        "in_high_chg": 7.082594038365642e-06
+    },
+    "perturbation": {
+        "max_abs": 0.05773496627807617,
+        "avg_linf": 0.040186770260334015,
+        "avg_l2": 0.09999999403953552,
+        "sparsity": 0.9993530511856079,
+        "smoothness": 7413.207291897502,
+        "avg_gradient_mag": 0.00013488437980413437,
+        "low_freq_ratio": 0.5369082689285278,
+        "high_freq_ratio": 0.46309176087379456
+    },
+    "cross_resolution": null
+}
