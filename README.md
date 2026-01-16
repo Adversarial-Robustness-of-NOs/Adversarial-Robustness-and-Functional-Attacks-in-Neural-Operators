@@ -1,4 +1,69 @@
-[[_TOC_]]
+<div align='center'>
+<h3>Adversarial Robustness and Functional Attacks in Neural Operators</h3>
+<h3>Deep Learning Project 2025</h3>
+
+<a>Artiom Casapu</a><sup>1</sup>,
+<a>Talin Herold</a><sup>1</sup>,
+<a>Oscar Kläsi</a><sup>1</sup>,
+<a>Tapdig Maharramli</a><sup>1</sup>,
+<a>Maximilian Schlegel</a><sup>1</sup>
+
+<sup>1</sup>ETH Zürich
+
+</div>
+
+---
+
+## Quick Start
+
+**Requirements:** Python 3.11+
+
+You can set up a pip environment as follows:
+```bash
+git clone https://github.com/Adversarial-Robustness-of-NOs/Adversarial-Robustness-and-Functional-Attacks-in-Neural-Operators
+cd Adversarial-Robustness-and-Functional-Attacks-in-Neural-Operators
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+---
+
+## Table of Contents
+
+- [Adversarial Robustness and Functional Attacks in Neural Operators](#adversarial-robustness-and-functional-attacks-in-neural-operators)
+  - [High level description](#high-level-description)
+  - [Requirements](#requirements)
+  - [Generating the training data](#generating-the-training-data)
+    - [Generating Darcy Flow data](#generating-darcy-flow-data)
+    - [Generating Navier-Stokes 2D data](#generating-navier-stokes-2d-data)
+  - [Training the base models](#training-the-base-models)
+  - [Running a benchmark of attack/evaluation loops](#running-a-benchmark-of-attackevaluation-loops)
+  - [Attacking the models](#attacking-the-models)
+    - [Configuration File Structure](#configuration-file-structure)
+      - [General Settings](#general-settings)
+      - [Model Paths](#model-paths)
+      - [PGD Attack Parameters](#pgd-attack-parameters)
+      - [Physics-Informed Attack Weights](#physics-informed-attack-weights)
+      - [Active Attacks (Toggle On/Off)](#active-attacks-toggle-onoff)
+      - [Frequency Targeting (Optional)](#frequency-targeting-optional)
+    - [Attack Types Summary](#attack-types-summary)
+    - [Example Usage](#example-usage)
+      - [Output Files](#output-files)
+  - [Evaluating individual attacks](#evaluating-individual-attacks)
+    - [Evaluation Arguments](#evaluation-arguments)
+    - [Evaluation Outputs](#evaluation-outputs)
+    - [Metrics Computed](#metrics-computed)
+    - [Example Usage](#example-usage-1)
+  - [Example Visualizations](#example-visualizations)
+    - [Darcy Flow Evaluation](#darcy-flow-evaluation)
+    - [Navier-Stokes Evaluation](#navier-stokes-evaluation)
+  - [Full benchmark](#full-benchmark)
+    - [Benchmark Arguments](#benchmark-arguments)
+    - [Benchmark Outputs](#benchmark-outputs)
+    - [Example Benchmark Plots](#example-benchmark-plots)
+
+---
 
 # Adversarial Robustness and Functional Attacks in Neural Operators
 
